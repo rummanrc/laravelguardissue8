@@ -47,6 +47,8 @@ class AuthController extends Controller
             if(Auth::guard($guard)->check()) $guardlist[] = $guard;
         }
 
+
+        //return response()->json($ldapuser = \Adldap\Laravel\Facades\Adldap::search()->where('uid','=',"tesla")->first());
         return response()->json(['access'=>$guardlist, 'userdata'=>auth()->user()]);
         return response()->json(auth()->user());
     }
@@ -94,8 +96,8 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Contracts\Auth\Guard
      */
-//    public function guard()
-//    {
-//        return Auth::guard('admin');
-//    }
+   public function guard()
+   {
+       return Auth::guard('admin');
+   }
 }
