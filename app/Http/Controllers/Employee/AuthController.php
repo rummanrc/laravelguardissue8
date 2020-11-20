@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers\Employee;
 
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
@@ -46,7 +46,7 @@ class AuthController extends Controller
             if(Auth::guard($guard)->check()) $guardlist[] = $guard;
         }
 
-        return response()->json(['access'=>$guardlist, 'userdata'=>auth()->user()]);
+        return response()->json(['access'=>$guardlist, 'userdata'=>auth()->guard('user')->user()]);
         return response()->json(auth()->user());
     }
 

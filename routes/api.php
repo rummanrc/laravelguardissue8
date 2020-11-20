@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::post('user/login', 'App\Http\Controllers\User\AuthController@login');
+Route::post('employee/login', 'App\Http\Controllers\Employee\AuthController@login');
 Route::group([
 
     'middleware' => ['auth:user'],
-    'namespace' => 'App\Http\Controllers\User',
-    'prefix' => 'user',
+    'namespace' => 'App\Http\Controllers\Employee',
+    'prefix' => 'employee',
 
 ], function ($router) {
 

@@ -25,7 +25,7 @@ class AuthController extends Controller
      */
     public function login()
     {
-        $credentials = request()->only(['email', 'password']);
+        $credentials = request()->only(['username', 'password']);
 
         if (! $token = auth()->guard('admin')->attempt($credentials)) {
             return response()->json(['error' => 'Admin Unauthorized'], 401);
@@ -49,8 +49,7 @@ class AuthController extends Controller
 
 
         //return response()->json($ldapuser = \Adldap\Laravel\Facades\Adldap::search()->where('uid','=',"tesla")->first());
-        return response()->json(['access'=>$guardlist, 'userdata'=>auth()->user()]);
-        return response()->json(auth()->user());
+        return response()->json(['access'=>$guardlist, 'userdata'=>auth()->guard('admin')->user()]);
     }
 
     /**

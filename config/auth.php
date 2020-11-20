@@ -83,7 +83,7 @@ return [
 
         'users' => [
             'driver' => 'ldap',
-            'model' => App\Models\User::class,
+            'model' => App\Models\Employee::class,
         ],
 
         // 'users' => [
