@@ -174,12 +174,12 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        
+
         /*
         * Adldap provider
         */
-        Adldap\Laravel\AdldapServiceProvider::class,
-        Adldap\Laravel\AdldapAuthServiceProvider::class,
+        //Adldap\Laravel\AdldapServiceProvider::class,
+        //Adldap\Laravel\AdldapAuthServiceProvider::class,
 
     ],
 

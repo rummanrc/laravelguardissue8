@@ -75,14 +75,14 @@ return [
     */
 
     'providers' => [
-        
+
         'admins' => [
             'driver' => 'eloquent',
             'model' => App\Models\Admin::class,
         ],
 
         'users' => [
-            'driver' => 'ldap',
+            'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
 
