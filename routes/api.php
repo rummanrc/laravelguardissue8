@@ -46,18 +46,18 @@ Route::group([
 
 });
 
-// Route::get('/ldap-test', function (Request $request){
-//     try {
-//         $credentials = $request->only('username');
-//         $username = $credentials['username'];
-//         $ldapuser = \Illuminate\Support\Facades\Auth::guard('user')->attempt(['username' => 'tesla', 'password' => 'password']);
-//         //$ldapuser = \Adldap\Laravel\Facades\Adldap::getFacadeRoot()->auth()->attempt($mail = 'tesla@ldap.forumsys.com', $password = 'password');
-//         //$ldapuser = Adldap\Laravel\Facades\Adldap::search()->where('uid','=',$username."")->first();
-//         return response()->json($ldapuser);
-//         //return response()->json(\Illuminate\Support\Facades\Auth::user()->getCommonName());
+Route::post('trainer/login', 'App\Http\Controllers\Trainer\AuthController@login');
+Route::group([
 
-//     } catch (Exception $e) {
-//         dd($e);
-//         //return response()->json(["message"=>"dasdsa"], 200);
-//     }
-// });
+    'middleware' => ['auth:trainer'],
+    'namespace' => 'App\Http\Controllers\Trainer',
+    'prefix' => 'trainer',
+
+], function ($router) {
+
+    //Route::post('login', 'AuthController@login');
+    Route::post('logout', 'AuthController@logout');
+    Route::post('refresh', 'AuthController@refresh');
+    Route::post('me', 'AuthController@me');
+
+});

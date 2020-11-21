@@ -55,6 +55,11 @@ return [
                 'driver' => 'jwt',
                 'provider' => 'users',
             ],
+
+            'trainer' => [
+                'driver' => 'jwt',
+                'provider' => 'trainers',
+            ],
     ],
 
     /*
@@ -75,7 +80,7 @@ return [
     */
 
     'providers' => [
-        
+
         'admins' => [
             'driver' => 'eloquent',
             'model' => App\Models\Admin::class,
@@ -84,6 +89,11 @@ return [
         'users' => [
             'driver' => 'ldap',
             'model' => App\Models\Employee::class,
+        ],
+
+        'trainers' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Trainer::class,
         ],
 
         // 'users' => [
@@ -115,6 +125,12 @@ return [
             'throttle' => 60,
         ],
         'admins' => [
+            'provider' => 'users',
+            'table' => 'password_resets',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'trainers' => [
             'provider' => 'users',
             'table' => 'password_resets',
             'expire' => 60,
