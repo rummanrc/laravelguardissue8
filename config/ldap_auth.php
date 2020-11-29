@@ -33,7 +33,8 @@ return [
     |
     */
 
-    'provider' => Adldap\Laravel\Auth\DatabaseUserProvider::class,
+    //'provider' => Adldap\Laravel\Auth\DatabaseUserProvider::class,
+    'provider' => App\Providers\CustomLdapDbProvider::class,
 
     /*
     |--------------------------------------------------------------------------

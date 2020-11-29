@@ -2,23 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7d85054-47ee-46d8-82a2-24e0622ef950" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/ldap_auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/ldap_auth.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="0.0.0.0" id="1407ce1f-2e3f-46b3-beec-5a4f7713bb24" name="0.0.0.0" port="8000" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/var/www/html/bare8" />
+        </path_mappings>
+      </server>
+    </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -159,7 +168,10 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c7d85054-47ee-46d8-82a2-24e0622ef950" name="Default Changelist" comment="" />
@@ -168,13 +180,63 @@
       <option name="presentableId" value="Default" />
       <updated>1605889630628</updated>
       <workItem from="1605889631670" duration="838000" />
+      <workItem from="1606591163555" duration="1886000" />
+      <workItem from="1606643364647" duration="79000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1324" height="219" key="GridCell.Tab.0.bottom" timestamp="1606593049279">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1324" height="219" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1606593049279" />
+    <state width="1324" height="219" key="GridCell.Tab.0.center" timestamp="1606593049278">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1324" height="219" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1606593049278" />
+    <state width="1324" height="219" key="GridCell.Tab.0.left" timestamp="1606593049278">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1324" height="219" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1606593049278" />
+    <state width="1324" height="219" key="GridCell.Tab.0.right" timestamp="1606593049278">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1324" height="219" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1606593049278" />
+    <state width="1324" height="219" key="GridCell.Tab.1.bottom" timestamp="1606593049280">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1324" height="219" key="GridCell.Tab.1.bottom/0.30.1366.738@0.30.1366.738" timestamp="1606593049280" />
+    <state width="1324" height="219" key="GridCell.Tab.1.center" timestamp="1606593049279">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1324" height="219" key="GridCell.Tab.1.center/0.30.1366.738@0.30.1366.738" timestamp="1606593049279" />
+    <state width="1324" height="219" key="GridCell.Tab.1.left" timestamp="1606593049279">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1324" height="219" key="GridCell.Tab.1.left/0.30.1366.738@0.30.1366.738" timestamp="1606593049279" />
+    <state width="1324" height="219" key="GridCell.Tab.1.right" timestamp="1606593049280">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1324" height="219" key="GridCell.Tab.1.right/0.30.1366.738@0.30.1366.738" timestamp="1606593049280" />
+    <state width="1324" height="219" key="GridCell.Tab.2.bottom" timestamp="1606593049281">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1324" height="219" key="GridCell.Tab.2.bottom/0.30.1366.738@0.30.1366.738" timestamp="1606593049281" />
+    <state width="1324" height="219" key="GridCell.Tab.2.center" timestamp="1606593049281">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1324" height="219" key="GridCell.Tab.2.center/0.30.1366.738@0.30.1366.738" timestamp="1606593049281" />
+    <state width="1324" height="219" key="GridCell.Tab.2.left" timestamp="1606593049280">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1324" height="219" key="GridCell.Tab.2.left/0.30.1366.738@0.30.1366.738" timestamp="1606593049280" />
+    <state width="1324" height="219" key="GridCell.Tab.2.right" timestamp="1606593049281">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1324" height="219" key="GridCell.Tab.2.right/0.30.1366.738@0.30.1366.738" timestamp="1606593049281" />
     <state x="442" y="194" key="NewPhpClassDialog" timestamp="1605939550890">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -183,5 +245,9 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="418" y="216" width="604" height="490" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1605889653760" />
+    <state x="408" y="314" width="540" height="168" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1606591503446">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="408" y="314" width="540" height="168" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.30.1366.738@0.30.1366.738" timestamp="1606591503446" />
   </component>
 </project>
