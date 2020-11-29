@@ -54,6 +54,6 @@ class Employee extends Authenticatable implements JWTSubject
      */
     public function getJWTCustomClaims()
     {
-        return [];
+        return ['role'=>'employee'];
     }
 }
