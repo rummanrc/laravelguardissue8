@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers\Trainer;
 
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
@@ -14,8 +14,8 @@ class AuthController extends Controller
      */
     public function __construct()
     {
-        Auth::shouldUse('user');
-        //$this->middleware('auth:user', ['except' => ['login']]);
+        Auth::shouldUse('trainer');
+        //$this->middleware('auth:trainer', ['except' => ['login']]);
     }
 
     /**
@@ -25,10 +25,10 @@ class AuthController extends Controller
      */
     public function login()
     {
-        $credentials = request()->only(['email', 'password']);
+        $credentials = request()->only(['username', 'password']);
 
-        if (! $token = auth()->guard('user')->attempt($credentials)) {
-            return response()->json(['error' => 'Unauthorized'], 401);
+        if (! $token = auth()->guard('trainer')->attempt($credentials)) {
+            return response()->json(['error' => 'Trainer Unauthorized'], 401);
         }
 
         return $this->respondWithToken($token);
@@ -47,8 +47,9 @@ class AuthController extends Controller
             if(Auth::guard($guard)->check()) $guardlist[] = $guard;
         }
 
-        return response()->json(['access'=>$guardlist, 'userdata'=>auth()->user()]);
-        return response()->json(auth()->user());
+
+        //return response()->json($ldapuser = \Adldap\Laravel\Facades\Adldap::search()->where('uid','=',"tesla")->first());
+        return response()->json(['access'=>$guardlist, 'userdata'=>auth()->guard('trainer')->user()]);
     }
 
     /**
@@ -94,8 +95,8 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Contracts\Auth\Guard
      */
-//    public function guard()
-//    {
-//        return Auth::guard('user');
-//    }
+    public function guard()
+    {
+        return Auth::guard('trainer');
+    }
 }
